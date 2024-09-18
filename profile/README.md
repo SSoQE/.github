@@ -1,4 +1,4 @@
-# Science School of Quantitative Ecology
+# Science School of Quantitative Ecology <img src="https://ondrejmottl.github.io/SSoQE_website/photos/logo_v2.png" align="right" width="200"/>
 
 🌍In today's world, the ability to navigate and analyze large, open-access datasets is not just an advantage—it's essential. Whether you're aiming to excel in your academic journey or carve out a successful career in ecology, mastery of quantitative methods is key.
 
