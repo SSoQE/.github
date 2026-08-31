@@ -20,8 +20,7 @@ Detection: both `Presentation/presentation.qmd` and `R/render.R` exist.
 
 ## 3. Mixed or legacy R
 
-Detection: the repository contains R, R Markdown, or Quarto source but does not
-match a profile above.
+Detection: the repository contains R, R Markdown, or Quarto source but does not match a profile above.
 
 - Follow the repository's established entry points and publishing workflow.
 - Do not migrate it to the current lecture template unless explicitly asked.
@@ -32,8 +31,7 @@ match a profile above.
 Detection: no earlier profile matches.
 
 - Preserve source/binary ownership and avoid unnecessary conversion.
-- Do not edit generated office, image, PDF, or site artifacts as though they
-  were plain source files.
+- Do not edit generated office, image, PDF, or site artifacts as though they were plain source files.
 
 ## Local overlay
 
