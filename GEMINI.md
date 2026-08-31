@@ -1,6 +1,3 @@
 # Gemini instructions for SSoQE
 
-Read and follow `AGENTS.md` as the canonical router for this repository. Load
-the task-relevant modules under `.ai/`, including `.ai/repository.md` when
-present. Closer repository instructions may add compatible constraints but may
-not weaken canonical safety, privacy, reproducibility, or branding rules.
+Read and follow `AGENTS.md` as the canonical router for this repository. Load the task-relevant modules under `.ai/`, including `.ai/repository.md` when present. Closer repository instructions may add compatible constraints but may not weaken canonical safety, privacy, reproducibility, or branding rules.
