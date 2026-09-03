@@ -233,6 +233,7 @@ test_agent_instructions <- function(
     ".ai/core.md",
     ".ai/r-style.md",
     ".ai/quarto-style.md",
+    ".ai/agents/presentation-reviewer.md",
     ".ai/branding.md",
     ".ai/repository-profiles.md",
     ".ai/repository.md",

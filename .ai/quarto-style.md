@@ -36,3 +36,22 @@ These rules cover Quarto websites, RevealJS lectures, exercise handouts, and mix
 - Check changed output for missing assets, broken links, clipped or overflowing code, unreadable tables, and incorrect syntax highlighting.
 - Inspect websites at desktop and narrow widths. Inspect RevealJS slides at the intended viewport and check fragment/animation states, not only final slides.
 - Confirm publication copies match the freshly rendered canonical output when the repository intentionally tracks more than one copy.
+
+### Rendered slide composition
+
+Technical overflow checks are not sufficient evidence that a slide is visually successful. When presentation content or layout changes:
+
+- Inspect a whole-deck overview for visual rhythm, repeated imbalance, and unexpectedly flat or crowded sequences, then inspect every slide at a readable full size.
+- Judge each slide as a complete canvas. Check vertical balance, title-to-content separation, spacing between elements, edge and footer clearance, dominant-element hierarchy, and whether whitespace is intentional.
+- For slides with fragments, inspect the initial state, every materially different intermediate state, and the final state. Prompts must work before answers appear, and revealed content must not hide, displace, or crowd the prompt.
+- Judge figures from the rendered slide rather than source dimensions alone. Check internal whitespace, aspect ratio, label size, and whether the plotted content fills its intended region.
+- Use automated geometry or overflow measurements only to identify candidates for inspection, never as automatic pass/fail evidence. Final assessment requires visual judgment at the intended viewport.
+- After changing spacing, grouping, or figure dimensions, render again and recheck the affected slide and its surrounding sequence. After the final source edit, perform one final render, inspect the whole-deck overview and high-risk slides at full size, and report remaining warnings or validation gaps.
+
+### Independent presentation review
+
+Before describing a new or substantially revised presentation as ready for human review or publication, assign the complete deck to a separate read-only reviewer agent or subagent using the [presentation reviewer](agents/presentation-reviewer.md). This gate applies to new decks, substantial restructuring or visual redesign, changes affecting several slides or fragment sequences, and shared theme changes. It is not required for isolated spelling, metadata, or link corrections unless they alter rendered behaviour.
+
+The authoring agent must provide the reviewer with the complete source, current rendered output, intended viewport, render log, and relevant repository instructions. The reviewer reports findings but never edits the artifact. The authoring agent resolves credible findings, renders again, and obtains a focused recheck of affected slides and surrounding sequences before handoff.
+
+If the environment has no separate reviewer capability, complete every available self-check and report explicitly that independent review was not performed. Never claim that the gate passed when only the authoring agent reviewed the deck; the missing independent pass does not by itself block an isolated low-risk correction.
