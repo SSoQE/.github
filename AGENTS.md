@@ -61,9 +61,10 @@ The website is a root Quarto website project that publishes to `docs/`. Website 
 - Always read [core rules](.ai/core.md).
 - For R code or R configuration, read [R style](.ai/r-style.md).
 - For Quarto, Markdown, presentations, exercises, or rendered documentation, read [Quarto style](.ai/quarto-style.md).
+- For creating, substantially revising, or reviewing lesson slides, read [presentation authoring](.ai/presentation-authoring.md). Establish the author and requested style first; the personal style guidance applies to Ondřej Mottl's decks or an explicit request to use his style.
 - For colors, typography, the SSoQE logo, themes, or visual output, read [branding](.ai/branding.md).
 - For repository classification and generated files, read [repository profiles](.ai/repository-profiles.md).
 
 ## Scope
 
-These standards apply prospectively to files an agent creates or deliberately changes. Do not refactor unrelated teaching material merely to satisfy them. The instructions are technical and do not prescribe pedagogy, lesson stages, or course content.
+These standards apply prospectively to files an agent creates or deliberately changes. Do not refactor unrelated teaching material merely to satisfy them. Technical tasks do not acquire new pedagogical requirements. Presentation authoring guidance preserves the verified author's style within the requested scope; it does not impose a universal curriculum, lesson-stage workflow, or another teacher's style.

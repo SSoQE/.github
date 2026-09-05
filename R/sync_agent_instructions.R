@@ -167,7 +167,9 @@ get_adapter_markdown <- function(
       canonical_base,
       "/.ai/r-style.md), [Quarto](",
       canonical_base,
-      "/.ai/quarto-style.md), [branding](",
+      "/.ai/quarto-style.md), [presentation authoring](",
+      canonical_base,
+      "/.ai/presentation-authoring.md), [branding](",
       canonical_base,
       "/.ai/branding.md), and [profile](",
       canonical_base,
@@ -230,8 +232,11 @@ get_adapter_markdown <- function(
       "and accessible contrast."
     ),
     bullet(
-      "These are technical instructions. Do not invent pedagogical ",
-      "requirements or lesson-stage workflows."
+      "For substantial slide authoring or review, read the presentation ",
+      "authoring module and establish the author. Apply personal style ",
+      "guidance only to Ond\u0159ej Mottl's decks or when explicitly ",
+      "requested. Keep technical fixes within scope; do not invent universal ",
+      "pedagogical requirements or lesson-stage workflows."
     ),
     "",
     "## Profile-specific rule",
@@ -255,7 +260,7 @@ get_adapter_files <- function(
   cursor <- normalize_text(
     paste0(
       "---\n",
-      "description: SSoQE technical and repository instructions\n",
+      "description: SSoQE repository and authoring instructions\n",
       "alwaysApply: true\n",
       "---\n\n",
       markdown

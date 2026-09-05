@@ -8,6 +8,12 @@ These rules cover Quarto websites, RevealJS lectures, exercise handouts, and mix
 - Never hand-edit rendered HTML, generated Markdown, generated theme SCSS/CSS, or copied publication outputs. Use the repository's generator or render wrapper instead.
 - Before changing a generated-looking file, locate its source and generation command. If ownership remains unclear, stop and report the ambiguity.
 
+## Presentation authoring
+
+For new decks, substantial slide revisions, and presentation review, read [presentation authoring](presentation-authoring.md). Establish authorship and the requested style before choosing references. Apply Ondřej Mottl's personal guidance only to his decks or when explicitly requested; preserve other teachers' choices. Technical correctness, brand fidelity, and absence of overflow do not by themselves establish a successful teaching presentation.
+
+Use the authoring guide to plan the explanation, central visuals, meaningful reveal states, and participant actions before polishing layouts. It adds no approval stages and does not expand isolated technical fixes into lesson redesigns.
+
 ## Source style
 
 - Keep each Markdown paragraph on one physical source line, without hard line breaks in the middle of a sentence or paragraph. Separate paragraphs with one blank line and use consistent two-space YAML indentation. The 80-character R limit applies only inside R code cells, never to prose.
@@ -52,6 +58,6 @@ Technical overflow checks are not sufficient evidence that a slide is visually s
 
 Before describing a new or substantially revised presentation as ready for human review or publication, assign the complete deck to a separate read-only reviewer agent or subagent using the [presentation reviewer](agents/presentation-reviewer.md). This gate applies to new decks, substantial restructuring or visual redesign, changes affecting several slides or fragment sequences, and shared theme changes. It is not required for isolated spelling, metadata, or link corrections unless they alter rendered behaviour.
 
-The authoring agent must provide the reviewer with the complete source, current rendered output, intended viewport, render log, and relevant repository instructions. The reviewer reports findings but never edits the artifact. The authoring agent resolves credible findings, renders again, and obtains a focused recheck of affected slides and surrounding sequences before handoff.
+The authoring agent must provide the reviewer with the complete source, current rendered output, intended viewport, render log, and relevant repository instructions, plus the verified author, requested style, and the reference sequences used for substantial authoring. The reviewer reports findings but never edits the artifact. The authoring agent resolves credible findings, renders again, and obtains a focused recheck of affected slides and surrounding sequences before handoff.
 
 If the environment has no separate reviewer capability, complete every available self-check and report explicitly that independent review was not performed. Never claim that the gate passed when only the authoring agent reviewed the deck; the missing independent pass does not by itself block an isolated low-risk correction.

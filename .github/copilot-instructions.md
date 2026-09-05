@@ -14,4 +14,5 @@ Critical defaults:
 - use strict reproducible R conventions from `.ai/r-style.md`;
 - use the repository's established Quarto render wrapper and validate output;
 - use the SSoQE palette, fonts, and current SSoQE logo from `.ai/branding.md` for changed visual material;
-- do not add pedagogical or lesson-stage requirements to technical work.
+- for substantial slide authoring or review, read `.ai/presentation-authoring.md` and establish the author before applying personal style guidance;
+- keep technical work within scope; do not invent universal pedagogical or lesson-stage requirements.
