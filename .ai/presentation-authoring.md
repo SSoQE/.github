@@ -28,6 +28,14 @@ The signature comes from these choices working together. Adding emojis, matching
 
 Use existing context and reasonable implementation choices. Ask only when a material uncertainty cannot be resolved from the repository or the conversation, such as disputed authorship or an unresolved change to lesson scope. Missing optional information is not a reason to suspend independent work. Planning and rendering do not authorize Git or GitHub mutations.
 
+## Revising an established lesson
+
+- Treat the strongest accepted version of the lesson itself as the primary content baseline. Inspect the target repository's history before rebuilding from a related course, a generic template, or an agent-written plan. A separately linked deck may be a content or style reference without being the lesson the user wants restored.
+- Preserve effective explanations, examples, jokes, activities, and visual sequences unless they conflict with the requested scope. When only one segment is being replaced, revise that segment and its transitions rather than redesigning the complete lesson by default.
+- Advanced participants may justify faster pacing, but not the removal of a concise conceptual bridge that gives later code meaning. Compress a strong foundation sequence when necessary instead of assuming technical confidence makes it redundant.
+- Keep the lesson's example world coherent across explanation, demonstration, and exercises. When the user changes the central dataset or case study, update participant tasks, hidden setup, speaker notes, outputs, and debriefs together; do not leave retired examples as a parallel storyline.
+- Use the target author's accepted current decks to calibrate title, section, and exercise slides. Reuse established classes and composition before inventing a new visual treatment for the same slide role.
+
 ## Write for live teaching
 
 - Give each slide a clear teaching purpose. Decide what the audience needs to see and what the presenter will explain aloud. Keep the visible content sufficient to understand the example, question, and action without writing a transcript of the lecture.
@@ -54,6 +62,7 @@ Choose the representation that lets participants recognise, inspect, compare, or
 ### Visual material and composition
 
 - Use substantial, purposeful visual material. The reference decks mix Scriberia-style explanations, community artwork, scientific figures, photographs, package mascots, screenshots, and memes. Preserve the useful character of a selected asset rather than redrawing everything into one uniform illustration system.
+- When introducing an R package, prefer its official hex logo or another official package mark, when one exists and reuse is permitted. Link the mark or adjacent package name to the official documentation. The logo should create recognition and visual breathing room, not sit as a small ornament beside a dense API summary.
 - An image may occupy most of the canvas with only a short heading and attribution. Two images or a visual and a small amount of text often make a comparison clearer. Avoid shrinking meaningful artwork to a decorative thumbnail beside a large prose block.
 - Reuse appropriate existing media and verify source, creator, licence, and attribution before adding or republishing it. Appearance in an older deck is evidence of style, not proof of permission. Choose another suitable asset if reuse cannot be established; do not leave the central visual as an unresolved placeholder at handoff.
 - Preserve figure meaning, labels, scales, units, and relevant context when cropping or emphasizing. Explain unfamiliar mappings and reference marks before asking participants to interpret them. Introduce necessary complexity gradually without distorting the evidence.
@@ -82,6 +91,7 @@ Choose the representation that lets participants recognise, inspect, compare, or
 ## Demonstration, practice, and participation
 
 - Preserve the connection between introducing a concept, demonstrating it, and letting participants try it. Place manageable tasks near the skill they practise, then combine established skills in a larger exercise when appropriate.
+- Give distinct new practices their own short activity and debrief when combining them would obscure what participants are learning or what failed. Mirror that separation in the participant materials instead of presenting one long undifferentiated exercise.
 - Anchor discussion in a real question, participant experience, a decision, or evidence on the slide. Invite prediction, comparison, explanation, or improvement rather than adding a token question whose answer is already displayed.
 - Give activity slides concise instructions: who works together when relevant, what they do, what they produce or check, and the time available if timing is part of the lesson. Use the established exercise styling and timer where suitable. Choose feasible durations from the task and session; do not copy timings mechanically from another deck.
 - Preserve social forms of learning where they fit: comparing approaches, discussing with a neighbour, peer review, group debriefs, or movement around the room. Provide an equivalent participation option when a physical activity would exclude someone.
@@ -97,6 +107,16 @@ Choose the representation that lets participants recognise, inspect, compare, or
 - Put lengthy exercise instructions and supporting implementation in the established handout or code materials, while leaving enough of the mechanism and task on the slide to teach from. Respect the requested balance: some authored decks deliberately teach primarily through code.
 - Use [R conventions](r-style.md) and the repository's existing project helpers. Do not hide the concept being taught inside an opaque helper or replace visible code with a polished diagram that no longer explains the operation.
 - Verify code/output consistency and substantive exercise outcomes through focused execution using the documented environment. Clearly label intentionally failing examples and show how the failure is interpreted or resolved. Distinguish literal output from illustrative mockups.
+
+### Ondřej's teaching-code preferences
+
+Apply these choices to Ondřej Mottl's decks and associated participant materials unless a repository documents a deliberate exception:
+
+- Use `set.seed(900723)` when an example needs a conventional arbitrary seed. Keep a scientifically required, externally specified, or compatibility-critical seed when changing it would alter the task's contract.
+- In `{purrr}` teaching code, use the formula shorthand with `.x`, such as `map(values, ~ transform(.x))`, rather than the native anonymous-function syntax `\(x)`. Introduce additional placeholders only when the functional genuinely has more inputs.
+- Put hidden data construction and slide-specific preparation in a secret or non-displayed code block on the slide that consumes it. Reserve the deck-wide setup block for packages, options, and objects that are genuinely shared across the presentation.
+- When slide code or a locally generated figure needs brand colours, fonts, or custom plotting parameters, read them from the repository's editable JSON theme sources. Do not duplicate palette values or visual constants in the QMD. Continue to regenerate tracked SCSS and plotting-theme products through the repository generator.
+- When participants create a project artifact, teach the real destination and the next action. Prefer established scaffolding helpers when they clarify the workflow, and show paired artifacts together when one is meant to verify or support the other.
 
 ## Concrete reference moves
 
